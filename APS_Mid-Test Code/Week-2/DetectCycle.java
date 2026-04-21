@@ -2,7 +2,7 @@ import java.util.*;
 
 class DetectCycle{
     public ListNode Detect(ListNode head){
-        ListNode s = haed, f = head;
+        ListNode s = head, f = head;
         while(f!=null && f.next!=null){
             s=s.next;
             f=f.next.next;
