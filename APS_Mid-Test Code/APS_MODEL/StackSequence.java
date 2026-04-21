@@ -9,8 +9,9 @@ class StackSequence{
         for(int val : pushed){
             st.push(val);
 
-            while(!st.isEmpty() && st.peek() == popped[j]){
+            while(!st.isEmpty() && st.peek() == poped[j]){
                 st.pop();
+                j++;
             }
         }
         return st.isEmpty();
